@@ -28,6 +28,7 @@ In Flutter, `theme`, `darkTheme`, and `themeMode` in `MaterialApp` are used to c
    - `ThemeMode.light`: Always uses the light theme.
    - `ThemeMode.dark`: Always uses the dark theme.
 
+
    ```dart
    themeMode: ThemeMode.system,
    ```
