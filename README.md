@@ -1,4 +1,4 @@
-# Advance Flutter Chapter 3
+# Advance Flutter Chapter 1
 
 
 ## ✔️ 1.1 Switch Dark Theme to Light Theme [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/switch%20theme)
