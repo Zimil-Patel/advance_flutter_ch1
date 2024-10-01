@@ -1,9 +1,7 @@
 # Advance Flutter Chapter 3
 
 
-## ✔️ 3.1 connectivity_plus [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/switch%20theme)
-
-### 1.1 Switch Dark Theme to Light Theme
+## ✔️ 1.1 Switch Dark Theme to Light Theme [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/switch%20theme)
 
 In Flutter, `theme`, `darkTheme`, and `themeMode` in `MaterialApp` are used to control the app's appearance based on light and dark themes:
 
