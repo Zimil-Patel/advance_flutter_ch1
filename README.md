@@ -1,16 +1,16 @@
-# advance_flutter_ch1
+# Advance Flutter Chapter 3
 
-A new Flutter project.
 
-## Getting Started
+## ✔️ 3.1 connectivity_plus [📂 (source)](https://github.com/Zimil-Patel/adv_flutter_ch3/tree/master/lib/3.1_connectivity_plus/view)
 
-This project is a starting point for a Flutter application.
+### 1.1 Switch Dark Theme to Light Theme
 
-A few resources to get you started if this is your first Flutter project:
+### Screenshots 📷
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/adv_flutter_ch3/blob/master/snaps/3.1/img1.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/adv_flutter_ch3/blob/master/snaps/3.1/img2.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Video Preview 🎥
+
+https://github.com/Zimil-Patel/adv_flutter_ch3/assets/112332000/f012e855-9b91-454e-a1bc-2b9e9b44f27e
