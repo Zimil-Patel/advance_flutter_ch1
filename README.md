@@ -121,4 +121,52 @@ This basic example shows how you can easily manage and display state using `Prov
 https://github.com/user-attachments/assets/c7203058-160a-405e-8967-5599e710f30f
 
 
+## ✔️ 1.3 TODO-APP using provider [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/todo%20app)
+
+Here’s a simple and concise documentation template for your TODO app that you can use for GitHub:
+
+---
+
+# TODO App Documentation
+
+## Overview
+The TODO app allows users to create, edit, complete, and delete tasks while providing options for dark and light themes. It leverages the Provider package for state management.
+
+## Features
+- **Create Task**: Users can add new tasks with titles and descriptions.
+- **Edit Task**: Users can modify existing tasks.
+- **Mark as Complete**: Users can mark tasks as completed, providing visual feedback.
+- **Delete Task**: Users can remove tasks from the list.
+- **Dark and Light Theme**: Users can toggle between dark and light themes for a personalized experience.
+
+## Example
+Here’s a brief code snippet demonstrating how to use the Provider to manage tasks:
+
+```dart
+// Adding a new task
+provider.addToList(title: title, description: description);
+
+// Editing an existing task
+provider.updateData(index: index, title: newTitle, description: newDescription);
+
+// Marking a task as complete
+provider.toggleComplete(index);
+```
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap1.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap2.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap3.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap4.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/4d64776c-18f0-41e0-aaf3-c1d8a8c157eb
+
+
+
+
 
