@@ -123,9 +123,6 @@ https://github.com/user-attachments/assets/c7203058-160a-405e-8967-5599e710f30f
 
 ## ✔️ 1.3 TODO-APP using provider [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/todo%20app)
 
-Here’s a simple and concise documentation template for your TODO app that you can use for GitHub:
-
----
 
 # TODO App Documentation
 
@@ -165,6 +162,87 @@ provider.toggleComplete(index);
 
 
 https://github.com/user-attachments/assets/4d64776c-18f0-41e0-aaf3-c1d8a8c157eb
+
+
+## ✔️ 1.4 Chanting App (using shared_preferences) [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/chant%20app)
+
+# Chanting App
+
+This documentation outlines the core features of the **Chanting App**, a simple app that allows users to track their chanting progress by saving their mala count, total count, and current count. The app also provides functionality to save images and persist the current set image using `shared_preferences` for persistent storage.
+
+
+## Features
+
+The **Chanting App** offers the following key features:
+
+1. **Save Mala Count**: Tracks the number of malas completed by the user.
+2. **Total Count**: Maintains the overall count of chants across sessions.
+3. **Current Count**: Saves the count for the current session, allowing users to resume later.
+4. **Save Image**: Allows the user to save images related to their chants, such as bead sets or visual aids.
+5. **Save Current Set Image**: Users can save and retrieve the current image used in the chanting session.
+
+Certainly! Below is a concise sample documentation for using `shared_preferences` in a Flutter project. 
+
+# Shared Preferences in Flutter
+
+
+## Installation
+
+Add the `shared_preferences` dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.16  # Check for the latest version
+```
+
+Run the following command to install the package:
+
+```bash
+flutter pub get
+```
+
+## Usage
+
+To use `shared_preferences`, follow these steps:
+
+1. **Import the package**:
+   ```dart
+   import 'package:shared_preferences/shared_preferences.dart';
+   ```
+
+2. **Save data**:
+   ```dart
+   Future<void> saveData(String key, String value) async {
+     SharedPreferences prefs = await SharedPreferences.getInstance();
+     await prefs.setString(key, value);
+   }
+   ```
+
+3. **Retrieve data**:
+   ```dart
+   Future<String?> getData(String key) async {
+     SharedPreferences prefs = await SharedPreferences.getInstance();
+     return prefs.getString(key);
+   }
+   ```
+
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.4/snap1.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.4/snap2.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.4/snap3.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/9fe2e101-6fd7-4877-bfc4-6b6b4a14f978
+
+
 
 
 
