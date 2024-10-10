@@ -7,9 +7,6 @@ class ChantCounterProvider extends ChangeNotifier{
 
   ChantModel chantModel = ChantModel(totalCount: 0, currentCount: 0, malaCount: 0);
 
-  ChantCounterProvider(){
-    getLocalInfo();
-  }
 
   // get local stored info
   Future<void> getLocalInfo() async {
@@ -18,6 +15,7 @@ class ChantCounterProvider extends ChangeNotifier{
     chantModel.currentCount = preferences.getInt('currentCount') ?? 0;
     chantModel.totalCount = preferences.getInt('totalCount') ?? 0;
     chantModel.malaCount = preferences.getInt('malaCount') ?? 0;
+    notifyListeners();
   }
 
   // Reset current count

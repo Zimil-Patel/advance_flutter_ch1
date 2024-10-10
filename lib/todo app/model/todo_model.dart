@@ -12,5 +12,4 @@ class ToDoModel {
       required this.time,
       required this.priority,
       required this.isComplete});
-
 }

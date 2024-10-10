@@ -6,6 +6,7 @@ import 'animated_theme_button.dart';
 AppBar todoAppBar(BuildContext context) {
   return AppBar(
     elevation: 4,
+    centerTitle: false,
     shadowColor: Colors.black.withOpacity(0.5),
     surfaceTintColor: Colors.transparent,
     title: RichText(
