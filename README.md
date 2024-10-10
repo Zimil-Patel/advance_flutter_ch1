@@ -153,9 +153,9 @@ provider.toggleComplete(index);
 ### Screenshots 📷
 
 <div align="left">
-<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap1.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap2.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap1.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap2.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap3.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; 
 
-<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap3.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap4.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.3/snap4.png" height = 510 width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ### Video Preview 🎥
