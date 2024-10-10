@@ -121,7 +121,7 @@ This basic example shows how you can easily manage and display state using `Prov
 https://github.com/user-attachments/assets/c7203058-160a-405e-8967-5599e710f30f
 
 
-## ✔️ 1.3 TODO-APP using provider [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/todo%20app)
+## ✔️ 1.3 TODO-APP (using shared_preferences, provider) [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/todo%20app)
 
 
 # TODO App Documentation
@@ -160,8 +160,7 @@ provider.toggleComplete(index);
 
 ### Video Preview 🎥
 
-
-https://github.com/user-attachments/assets/4d64776c-18f0-41e0-aaf3-c1d8a8c157eb
+https://github.com/user-attachments/assets/83ba6a28-384f-412d-8a78-ef08f3cb18bb
 
 
 ## ✔️ 1.4 Chanting App (using shared_preferences) [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/chant%20app)
