@@ -14,7 +14,7 @@ class ChantImageProvider extends ChangeNotifier {
 
   // nextImage
   Future<void> nextImage() async {
-    if (currentImageIndex == 10){
+    if (currentImageIndex == 10) {
       currentImageIndex = 1;
     } else {
       currentImageIndex++;
@@ -25,7 +25,7 @@ class ChantImageProvider extends ChangeNotifier {
 
   // previousImage
   Future<void> previousImage() async {
-    if (currentImageIndex == 1){
+    if (currentImageIndex == 1) {
       currentImageIndex = 10;
     } else {
       currentImageIndex--;
@@ -42,10 +42,10 @@ class ChantImageProvider extends ChangeNotifier {
 
   // saveImageToGallery
   Future<void> saveImageToGallery() async {
-
     log('-------------------- Called --------------------');
 
-    ByteData byteData = await rootBundle.load('assets/images/image$currentImageIndex.jpg');
+    ByteData byteData =
+        await rootBundle.load('assets/images/image$currentImageIndex.jpg');
     Uint8List data = byteData.buffer.asUint8List();
 
     await ImageGallerySaver.saveImage(data, quality: 100);
