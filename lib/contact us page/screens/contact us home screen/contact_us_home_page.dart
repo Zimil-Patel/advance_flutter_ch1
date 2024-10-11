@@ -1,5 +1,7 @@
 import 'package:advance_flutter_ch1/todo%20app/todo_utils.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'components/contact_us_app_bar.dart';
 
@@ -29,17 +31,46 @@ class ContactUsHomePage extends StatelessWidget {
               ),
             ),
 
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  color: Colors.lightBlue.withOpacity(0.2),
-                ),
-              ),
-              child: Row(
-                children: [
+            const SizedBox(
+              height: 10,
+            ),
 
-                ],
+            CupertinoButton(
+              onPressed: () {},
+              padding: EdgeInsets.zero,
+              child: Container(
+                margin: const EdgeInsets.symmetric(vertical: 20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    width: 1.6,
+                    color: Colors.lightBlue.withOpacity(0.2),
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 35,
+                      width: 35,
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 12),
+                      child: SvgPicture.asset(
+                        'assets/svg/phone.svg',
+                        color: Colors.lightBlue,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                     Expanded(
+                      flex: 2,
+                      child: Text('+91 7043546897', style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        fontSize: height * 0.016,
+                        fontWeight: FontWeight.w600
+                      ),),
+                    ),
+                    const Spacer(),
+                  ],
+                ),
               ),
             ),
           ],
