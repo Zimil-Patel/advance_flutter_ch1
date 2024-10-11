@@ -1,4 +1,5 @@
 import 'package:advance_flutter_ch1/chant%20app/provider/chant_count_provider.dart';
+import 'package:advance_flutter_ch1/contact%20us%20page/contact_us_app.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
@@ -13,6 +14,7 @@ import 'chant app/provider/image_provider.dart';
 // 2. CounterScreen()
 // 3. ToDoApp()
 // 4. ChantApp()
+// 5. ContactUsApp()
 
 late ChantCounterProvider provider;
 late ToDoProvider toDoProvider;
@@ -56,7 +58,7 @@ class GlobalApp extends StatelessWidget {
           create: (context) => ChantImageProvider(),
         )
       ],
-      builder: (context, child) => const TodoApp(),
+      builder: (context, child) => const ContactUsApp(),
     );
   }
 }
