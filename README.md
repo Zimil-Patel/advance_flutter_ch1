@@ -323,7 +323,7 @@ await launchUrl(url, mode: LaunchMode.inAppWebView);
 ### Screenshots 📷
 
 <div align="left">
-<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap1.png" height = 580 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ### Video Preview 🎥
