@@ -332,7 +332,81 @@ await launchUrl(url, mode: LaunchMode.inAppWebView);
 https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
 
 
+## ✔️ 1.5 Contact us Page [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/gallery%20auth)
 
+
+### Usage Definition:**
+The `local_auth` package allows Flutter apps to authenticate users using biometric methods (fingerprint, face recognition, etc.) or device passcodes. This provides an added layer of security to your application.
+
+###  Add Dependency:**
+First, add the `local_auth` package to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  local_auth: ^2.1.0  # or the latest version
+```
+
+
+### Permissions to Add:**
+#### **For Android:**
+In `android/app/src/main/AndroidManifest.xml`, add the following permission:
+
+```xml
+<uses-permission android:name="android.permission.USE_BIOMETRIC" />
+<uses-permission android:name="android.permission.USE_FINGERPRINT" />
+```
+
+Also, add the `Biometric` authentication declaration under the `application` tag:
+
+```xml
+<application ...>
+    <meta-data android:name="flutterEmbedding" android:value="2" />
+</application>
+```
+
+#### **For iOS:**
+In your `ios/Runner/Info.plist`, add:
+
+```xml
+<key>NSFaceIDUsageDescription</key>
+<string>We need to use Face ID for authentication</string>
+```
+
+### Single Authentication Code:**
+
+
+```dart
+// method to authenticate
+  Future<void> authenticateUser(BuildContext context) async{
+    final LocalAuthentication auth = LocalAuthentication();
+    bool canAut = await auth.canCheckBiometrics && await auth.isDeviceSupported();
+
+    if(canAut){
+      await auth.authenticate(localizedReason: "Verify to open hidden album");
+      Navigator.push(context, MaterialPageRoute(builder: (context) => const HiddenPage(),));
+    } else {
+      log('Warning: Authentication issue!');
+    }
+```
+
+### Important Points:**
+- **`canCheckBiometrics`**: This method checks if the device supports biometric authentication.
+- **`authenticate()`**: This method triggers the biometric authentication process.
+- **`localizedReason`**: This is the message that will be displayed to the user explaining why authentication is required.
+
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap3.png" height = 590 width = 300>
+
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap4.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+
+### Video Preview 🎥
+
+https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
 
 
 
