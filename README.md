@@ -240,6 +240,100 @@ To use `shared_preferences`, follow these steps:
 https://github.com/user-attachments/assets/9fe2e101-6fd7-4877-bfc4-6b6b4a14f978
 
 
+## ✔️ 1.5 Contact us Page [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/contact%20us%20page)
+
+# url_launcher
+
+A Flutter plugin for launching a URL in the mobile platform. Supports different types of URLs, such as web URLs, phone numbers, emails, and SMS.
+
+## Installation
+
+Add `url_launcher` to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  url_launcher: ^6.1.9  # Check for the latest version on pub.dev
+```
+
+Then, run:
+
+```bash
+flutter pub get
+```
+
+## Usage
+
+1. **Import the package:**
+
+```dart
+import 'package:url_launcher/url_launcher.dart';
+```
+
+2. **Launch a URL:**
+
+```dart
+void _launchURL() async {
+  final Uri url = Uri.parse('https://flutter.dev');
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+```
+
+3. **Launch different types of URLs:**
+
+- **Phone Call:**
+
+```dart
+final Uri phoneUrl = Uri(scheme: 'tel', path: '+1234567890');
+await launchUrl(phoneUrl);
+```
+
+- **Send SMS:**
+
+```dart
+final Uri smsUrl = Uri(scheme: 'sms', path: '+1234567890');
+await launchUrl(smsUrl);
+```
+
+- **Send Email:**
+
+```dart
+final Uri emailUrl = Uri(
+  scheme: 'mailto',
+  path: 'example@example.com',
+  query: 'subject=Hello&body=Welcome to Flutter!',
+);
+await launchUrl(emailUrl);
+```
+
+## Additional Options
+
+`launchUrl` allows customization using the `LaunchOptions` parameter.
+
+- **Force WebView:**
+
+```dart
+await launchUrl(url, mode: LaunchMode.inAppWebView);
+```
+
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
+
+
+
+
 
 
 
