@@ -1,5 +1,6 @@
 import 'package:advance_flutter_ch1/chant%20app/provider/chant_count_provider.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/gallery_app.dart';
+import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
@@ -29,6 +30,7 @@ Future<void> main() async {
   await toDoProvider.refreshToDoList();
   toDoThemeProvider = ToDoThemeProvider();
   await toDoThemeProvider.getTheme();
+  GalleryModel.convertToList();
 
   runApp(const GlobalApp());
 }

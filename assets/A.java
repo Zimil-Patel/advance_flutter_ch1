@@ -1,0 +1,3 @@
+gallery
+hidden1
+hidden2
