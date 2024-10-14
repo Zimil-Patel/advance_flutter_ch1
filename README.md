@@ -398,7 +398,7 @@ In your `ios/Runner/Info.plist`, add:
 ### Screenshots 📷
 
 <div align="left">
-<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap3.png" height = 590 width = 300>
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap3.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap2.png" height = 590 width = 300>
 
 <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.6/snap4.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
 
