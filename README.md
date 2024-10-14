@@ -406,7 +406,8 @@ In your `ios/Runner/Info.plist`, add:
 
 ### Video Preview 🎥
 
-https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
+https://github.com/user-attachments/assets/e3471ee7-ca08-4bf2-8fb8-a2a7386ebee3
+
 
 
 
