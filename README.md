@@ -240,7 +240,7 @@ To use `shared_preferences`, follow these steps:
 https://github.com/user-attachments/assets/9fe2e101-6fd7-4877-bfc4-6b6b4a14f978
 
 
-## ✔️ 1.5 Contact us Page [📂 (source)]()
+## ✔️ 1.5 Contact us Page [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/contact%20us%20page)
 
 # url_launcher
 
@@ -323,9 +323,13 @@ await launchUrl(url, mode: LaunchMode.inAppWebView);
 ### Screenshots 📷
 
 <div align="left">
-<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap1.png" height = 580 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.5/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 
 ### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
 
 
 
