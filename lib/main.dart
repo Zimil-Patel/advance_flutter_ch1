@@ -4,7 +4,6 @@ import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/todo_provider.dart';
-import 'package:advance_flutter_ch1/todo%20app/todo_app.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

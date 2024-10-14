@@ -26,7 +26,7 @@ class ToDoTheme {
       bodyMedium: const TextStyle(color: Colors.black),
       bodyLarge: const TextStyle(color: Colors.black),
     ),
-    radioTheme: RadioThemeData(fillColor: MaterialStateColor.resolveWith((states) => Colors.blue)),
+    radioTheme: RadioThemeData(fillColor: WidgetStateColor.resolveWith((states) => Colors.blue)),
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -52,6 +52,6 @@ class ToDoTheme {
       bodyMedium: const TextStyle(color: Colors.white),
       bodyLarge: const TextStyle(color: Colors.white),
     ),
-    radioTheme: RadioThemeData(fillColor: MaterialStateColor.resolveWith((states) => Colors.blue)),
+    radioTheme: RadioThemeData(fillColor: WidgetStateColor.resolveWith((states) => Colors.blue)),
   );
 }
