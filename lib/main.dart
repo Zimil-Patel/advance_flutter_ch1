@@ -1,5 +1,4 @@
 import 'package:advance_flutter_ch1/chant%20app/provider/chant_count_provider.dart';
-import 'package:advance_flutter_ch1/contact%20us%20page/contact_us_app.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/gallery_app.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
