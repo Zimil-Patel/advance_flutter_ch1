@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
+// import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ChantImageProvider extends ChangeNotifier {
@@ -48,7 +48,7 @@ class ChantImageProvider extends ChangeNotifier {
         await rootBundle.load('assets/images/image$currentImageIndex.jpg');
     Uint8List data = byteData.buffer.asUint8List();
 
-    await ImageGallerySaver.saveImage(data, quality: 100);
+    // await ImageGallerySaver.saveImage(data, quality: 100);
     log('-------------------- Ended --------------------');
   }
 
