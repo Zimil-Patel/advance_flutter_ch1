@@ -1,7 +1,8 @@
 import 'package:advance_flutter_ch1/chant%20app/provider/chant_count_provider.dart';
-import 'package:advance_flutter_ch1/gallery%20auth/gallery_app.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
+import 'package:advance_flutter_ch1/one%20time%20intro%20/one_time_intro_app.dart';
+import 'package:advance_flutter_ch1/one%20time%20intro%20/provider/intro_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
@@ -17,6 +18,7 @@ import 'chant app/provider/image_provider.dart';
 // 4. ChantApp()
 // 5. ContactUsApp()
 // 6. GalleryApp()
+// 7. OneTimeIntroApp()
 
 late ChantCounterProvider provider;
 late ToDoProvider toDoProvider;
@@ -63,8 +65,11 @@ class GlobalApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => AuthProvider(),
         ),
+        ChangeNotifierProvider(
+          create: (context) => IntroProvider(),
+        ),
       ],
-      builder: (context, child) => const GalleryApp(),
+      builder: (context, child) => const OneTimeIntroApp(),
     );
   }
 }
