@@ -332,7 +332,7 @@ await launchUrl(url, mode: LaunchMode.inAppWebView);
 https://github.com/user-attachments/assets/20aca415-e1b5-40af-83a4-7dc8ff25219a
 
 
-## ✔️ 1.5 Contact us Page [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/gallery%20auth)
+## ✔️ 1.5 Photo Gallery With Biometric Authentication [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/gallery%20auth)
 
 
 ### Usage Definition:**
