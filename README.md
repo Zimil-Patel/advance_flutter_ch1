@@ -408,6 +408,54 @@ In your `ios/Runner/Info.plist`, add:
 
 https://github.com/user-attachments/assets/e3471ee7-ca08-4bf2-8fb8-a2a7386ebee3
 
+## ✔️ 1.6 Provider Tree
+
+Here’s a short GitHub documentation about **State**, **State Management**, and the **Provider** package in Flutter:
+
+---
+
+# State, State Management, and Provider in Flutter
+
+## **State**
+State in Flutter represents data that can change over time or in response to user interaction. It affects how the UI looks at a particular point in time.
+
+There are two types of state:
+1. **Ephemeral State**: Temporary state within a single widget.
+2. **App State**: Shared state across multiple parts of the app.
+
+---
+
+## **State Management**
+State management refers to the techniques used to manage the flow of data and changes across an application. Efficient state management ensures a responsive and maintainable app.
+
+Popular methods in Flutter:
+- **setState**: Directly updates the state of a widget.
+- **InheritedWidget**: Allows passing data down the widget tree.
+- **Provider**: A powerful and scalable approach using a third-party package.
+
+---
+
+## **Provider Package**
+The `provider` package is a wrapper around InheritedWidget, making it easier to manage and share state across the widget tree. It’s one of the most popular solutions for state management in Flutter.
+
+### **Features of Provider**:
+- **Simplifies access to data**: Provides easy-to-use patterns for sharing data.
+- **Reactivity**: Automatically rebuilds widgets when the data they depend on changes.
+- **Loose coupling**: Decouples business logic from UI code.
+- **Granular control**: You can listen to changes at any level in the widget tree.
+- **Multiple Providers**: Allows injecting multiple objects into the widget tree.
+
+
+### **Useful Resources**
+- [Provider Documentation](https://pub.dev/packages/provider)
+- [Flutter State Management Documentation](https://flutter.dev/docs/development/data-and-backend/state-mgmt)
+
+
+### Screenshots 📷
+
+<img src = "https://github.com/Zimil-Patel/AdvFlutterCh1/blob/main/snaps/1.3/stateManagementFlow.drawio.png" height = "700" width = "650">
+
+
 
 
 
