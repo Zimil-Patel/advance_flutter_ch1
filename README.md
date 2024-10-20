@@ -490,6 +490,66 @@ This Flutter application demonstrates a flow where users see an introductory pag
 
 https://github.com/user-attachments/assets/831347b0-b743-4ee8-894e-945a036dbd52
 
+## ✔️ 1.8 Provider & Change Theme using Provider [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/theme%20using%20provider)
+
+
+# Flutter Theme Preference (Light/Dark Mode) using Provider and SharedPreferences
+
+This Flutter application demonstrates how to save and retrieve a theme preference (light/dark mode) using **Provider** for state management and **SharedPreferences** for data persistence.
+
+## Features
+
+- **Theme Switching**: Users can switch between light and dark themes.
+- **Data Persistence**: The selected theme preference is saved using **SharedPreferences**.
+- **State Management**: **Provider** is used to manage and update the app's theme state across the app.
+
+## How It Works
+
+1. **Theme Selection**  
+   The user can toggle between light and dark themes. The selected theme is saved in **SharedPreferences** as `isDark`.
+
+2. **SharedPreferences**  
+   On app launch, the theme preference (`isDark`) is retrieved from **SharedPreferences** and applied. If no preference is found, the default theme is light mode.
+
+3. **Provider**  
+   The **Provider** package is used to handle the theme state and notify the app to rebuild the UI when the theme changes.
+
+```
+
+### Theme Provider
+
+The **ThemeProvider** class manages the app's theme state and allows switching between light and dark themes.
+
+```dart
+class ThemeProvider extends ChangeNotifier {
+  bool isDarkMode;
+
+  ThemeProvider(this.isDarkMode);
+
+  void toggleTheme() async {
+    isDarkMode = !isDarkMode;
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isDark', isDarkMode);
+    notifyListeners();
+  }
+}
+```
+
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.8/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.8/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; 
+   
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/fda05f23-4aaf-4ea4-8c09-c15d35eeaa1d
+
+
+
 
 
 
