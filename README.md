@@ -551,34 +551,38 @@ https://github.com/user-attachments/assets/fda05f23-4aaf-4ea4-8c09-c15d35eeaa1d
 
 ## ✔️ 1.9 Create Registration Page using Stepper Widget [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/stepper)
 
-# Flutter Stepper Widget Example
+# Flutter Registration Form with Vertical and Horizontal Steppers
 
-This Flutter application demonstrates how to use the **Stepper** widget to display a series of steps in a linear or non-linear sequence, useful for creating multi-step forms or processes.
+This Flutter project demonstrates how to implement a multi-step **Registration Form** using both vertical and horizontal steppers. The form guides users through a sequence of steps to complete their registration.
 
 ## Features
 
-- **Stepper Widget**: A step-based UI component in Flutter that allows users to proceed through a sequence of steps.
-- **Linear and Non-Linear Modes**: Supports both sequential (linear) and non-sequential (non-linear) step progressions.
-- **Customizable Steps**: Each step can include titles, subtitles, icons, and content.
+- **Multi-Step Form**: Users fill in their registration details step by step.
+- **Vertical and Horizontal Steppers**: Supports both vertical and horizontal step progressions for different UI layouts.
+- **Form Validation**: Each step validates the input before proceeding to the next.
 
 ## How It Works
 
-1. **Linear Stepper**  
-   Users can only move forward or backward step-by-step. They must complete one step before moving to the next.
+1. **Vertical Stepper**  
+   A vertical stepper is displayed by default, guiding the user through the registration process from top to bottom.
 
-2. **Non-Linear Stepper**  
-   Users can jump between steps without completing them in a fixed order.
+2. **Horizontal Stepper**  
+   The user can toggle to a horizontal layout where steps are shown in a row, and users navigate left to right.
 
-3. **Step State**  
-   Each step can have a state such as `completed`, `active`, or `disabled`, allowing you to control the progress visually.
+3. **Form Fields**  
+   The form contains basic fields such as name, email, password, and confirmation.
 
-### Stepper Configuration
+4. **Step Validation**  
+   Each step validates its form fields before allowing the user to proceed to the next step.
 
-- **currentStep**: Manages the index of the current step.
-- **onStepContinue**: Moves to the next step.
-- **onStepCancel**: Moves back to the previous step.
-- **steps**: A list of `Step` widgets, each containing a title, content, and an active state.
+## Customization
 
+- **Form Fields**: Add or customize form fields within each step.
+- **Stepper Layout**: Adjust between `StepperType.vertical` and `StepperType.horizontal` based on the desired layout.
+
+---
+
+This documentation provides a clear guide on implementing a **Registration Form** using vertical and horizontal steppers in Flutter. Feel free to modify it according to your project needs!
 
 ### Screenshots 📷
 
