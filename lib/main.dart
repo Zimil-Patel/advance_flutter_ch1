@@ -3,7 +3,9 @@ import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
-import 'package:advance_flutter_ch1/theme%20using%20provider/theme_using_provider.dart';
+import 'package:advance_flutter_ch1/stepper/provider/horizontal_stepper_provider.dart';
+import 'package:advance_flutter_ch1/stepper/provider/vertical_stepper_provider.dart';
+import 'package:advance_flutter_ch1/stepper/stepper_app.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/todo_provider.dart';
 import 'package:flutter/material.dart';
@@ -73,8 +75,14 @@ class GlobalApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => introProvider,
         ),
+        ChangeNotifierProvider(
+          create: (context) => VerticalStepperProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HorizontalStepperProvider(),
+        ),
       ],
-      builder: (context, child) => const ThemeUsingProvider(),
+      builder: (context, child) => const StepperApp(),
     );
   }
 }
