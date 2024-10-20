@@ -549,6 +549,56 @@ class ThemeProvider extends ChangeNotifier {
 https://github.com/user-attachments/assets/fda05f23-4aaf-4ea4-8c09-c15d35eeaa1d
 
 
+## ✔️ 1.9 Create Registration Page using Stepper Widget [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/stepper)
+
+# Flutter Stepper Widget Example
+
+This Flutter application demonstrates how to use the **Stepper** widget to display a series of steps in a linear or non-linear sequence, useful for creating multi-step forms or processes.
+
+## Features
+
+- **Stepper Widget**: A step-based UI component in Flutter that allows users to proceed through a sequence of steps.
+- **Linear and Non-Linear Modes**: Supports both sequential (linear) and non-sequential (non-linear) step progressions.
+- **Customizable Steps**: Each step can include titles, subtitles, icons, and content.
+
+## How It Works
+
+1. **Linear Stepper**  
+   Users can only move forward or backward step-by-step. They must complete one step before moving to the next.
+
+2. **Non-Linear Stepper**  
+   Users can jump between steps without completing them in a fixed order.
+
+3. **Step State**  
+   Each step can have a state such as `completed`, `active`, or `disabled`, allowing you to control the progress visually.
+
+### Stepper Configuration
+
+- **currentStep**: Manages the index of the current step.
+- **onStepContinue**: Moves to the next step.
+- **onStepCancel**: Moves back to the previous step.
+- **steps**: A list of `Step` widgets, each containing a title, content, and an active state.
+
+
+### Screenshots 📷
+
+
+<div align="left">
+   
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/vertical/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/vertical/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/vertical/snap3.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/vertical/snap4.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/horizontal/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/horizontal/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.9/horizontal/snap3.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp;
+   
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/ab94e381-0ca1-455e-88d6-d24ef7569c75
+
+
+
+
 
 
 
