@@ -25,6 +25,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   url_launcher: ^6.3.1
   local_auth: ^2.3.0
+  getwidget: any
 
 dev_dependencies:
   flutter_test:
@@ -44,3 +45,4 @@ flutter:
     - assets/images/hidden1/
     - assets/images/hidden2/
     - assets/images/intro/
+    - assets/images/profile/

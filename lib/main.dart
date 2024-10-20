@@ -3,13 +3,13 @@ import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
+import 'package:advance_flutter_ch1/theme%20using%20provider/theme_using_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/todo_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'chant app/provider/image_provider.dart';
-import 'one time intro/one_time_intro_app.dart';
 import 'one time intro/provider/intro_provider.dart';
 
 // 1. SwitchThemeScreen()
@@ -19,6 +19,8 @@ import 'one time intro/provider/intro_provider.dart';
 // 5. ContactUsApp()
 // 6. GalleryApp()
 // 7. OneTimeIntroApp()
+// 8. ThemeUsingProvider()
+// 9. StepperApp()
 
 late ChantCounterProvider provider;
 late ToDoProvider toDoProvider;
@@ -72,7 +74,7 @@ class GlobalApp extends StatelessWidget {
           create: (context) => introProvider,
         ),
       ],
-      builder: (context, child) => const OneTimeIntroApp(),
+      builder: (context, child) => const ThemeUsingProvider(),
     );
   }
 }
