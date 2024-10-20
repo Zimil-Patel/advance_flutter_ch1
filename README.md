@@ -456,7 +456,7 @@ The `provider` package is a wrapper around InheritedWidget, making it easier to 
 <img src = "https://github.com/Zimil-Patel/AdvFlutterCh1/blob/main/snaps/1.3/stateManagementFlow.drawio.png" height = "700" width = "650">
 
 
-## ✔️ 1.7  [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/one%20time%20intro)
+## ✔️ 1.7 One Time Intro Screen in Flutter [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/one%20time%20intro)
 
 This Flutter application demonstrates a flow where users see an introductory page only once. Once the intro is completed, its value is stored in **SharedPreferences**. Upon subsequent launches of the app, users are redirected directly to the home page.
 
