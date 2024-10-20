@@ -1,8 +1,6 @@
 import 'package:advance_flutter_ch1/chant%20app/provider/chant_count_provider.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/provider/auth_provider.dart';
-import 'package:advance_flutter_ch1/one%20time%20intro%20/one_time_intro_app.dart';
-import 'package:advance_flutter_ch1/one%20time%20intro%20/provider/intro_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/counter_provider.dart';
 import 'package:advance_flutter_ch1/provider%20using%20counter/provider/theme_provider.dart';
 import 'package:advance_flutter_ch1/todo%20app/provider/theme_provider.dart';
@@ -11,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'chant app/provider/image_provider.dart';
+import 'one time intro/one_time_intro_app.dart';
+import 'one time intro/provider/intro_provider.dart';
 
 // 1. SwitchThemeScreen()
 // 2. CounterScreen()
@@ -23,6 +23,7 @@ import 'chant app/provider/image_provider.dart';
 late ChantCounterProvider provider;
 late ToDoProvider toDoProvider;
 late ToDoThemeProvider toDoThemeProvider;
+late IntroProvider introProvider;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +34,8 @@ Future<void> main() async {
   toDoThemeProvider = ToDoThemeProvider();
   await toDoThemeProvider.getTheme();
   GalleryModel.convertToList();
+  introProvider = IntroProvider();
+  await introProvider.getLocalPreference();
 
   runApp(const GlobalApp());
 }
@@ -66,7 +69,7 @@ class GlobalApp extends StatelessWidget {
           create: (context) => AuthProvider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => IntroProvider(),
+          create: (context) => introProvider,
         ),
       ],
       builder: (context, child) => const OneTimeIntroApp(),
