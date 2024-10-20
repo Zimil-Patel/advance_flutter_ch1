@@ -456,6 +456,46 @@ The `provider` package is a wrapper around InheritedWidget, making it easier to 
 <img src = "https://github.com/Zimil-Patel/AdvFlutterCh1/blob/main/snaps/1.3/stateManagementFlow.drawio.png" height = "700" width = "650">
 
 
+## ✔️ 1.7  [📂 (source)](https://github.com/Zimil-Patel/advance_flutter_ch1/tree/master/lib/one%20time%20intro)
+
+This Flutter application demonstrates a flow where users see an introductory page only once. Once the intro is completed, its value is stored in **SharedPreferences**. Upon subsequent launches of the app, users are redirected directly to the home page.
+
+## Features
+
+- Intro Page: Displayed to users on the first app launch.
+- Home Page: Users are redirected to this page after the intro is completed or upon reopening the app.
+- Data Persistence: User's intro completion status is stored using **SharedPreferences**.
+
+## How It Works
+
+1. **Intro Page**  
+   The user is presented with an introduction page when the app is launched for the first time. After completion, a flag (`isIntroCompleted`) is saved in **SharedPreferences**.
+
+2. **Home Page**  
+   If the intro has been completed previously, users are automatically redirected to the home page when reopening the app.
+
+3. **SharedPreferences**  
+   We use **SharedPreferences** to store the `isIntroCompleted` flag. On each app launch, the app checks this flag to determine whether to show the intro or home page.
+
+
+### Screenshots 📷
+
+<div align="left">
+<img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.7/snap1.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.7/snap2.png" height = 590 width = 300> &nbsp;&nbsp;&nbsp;&nbsp; <img src= "https://github.com/Zimil-Patel/advance_flutter_ch1/blob/master/snaps/1.7/snap3.png" height = 590 width = 300>
+
+</div>
+
+### Video Preview 🎥
+
+
+https://github.com/user-attachments/assets/831347b0-b743-4ee8-894e-945a036dbd52
+
+
+
+
+
+
+
 
 
 
