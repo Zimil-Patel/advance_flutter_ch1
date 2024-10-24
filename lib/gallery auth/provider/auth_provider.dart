@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:advance_flutter_ch1/gallery%20auth/model/gallery_model.dart';
 import 'package:advance_flutter_ch1/gallery%20auth/view/hidden/hidden_page.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
